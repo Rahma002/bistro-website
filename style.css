@@ -304,10 +304,6 @@ section {
   object-fit: cover;
 }
 
-.gallery .box-container .image:hover img {
-  transform: scale(1.1);
-}
-
 /* end */
 
 /* contact */
