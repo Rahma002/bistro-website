@@ -120,6 +120,7 @@ section {
   font-size: 1.7rem;
   color: white;
   margin-left: 2rem;
+  text-decoration: none;
 }
 
 .header .navbar a:hover {
@@ -413,6 +414,7 @@ section {
   section {
     padding: 3rem;
   }
+
   .about .row .image {
     display: none;
   }
