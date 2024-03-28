@@ -129,7 +129,7 @@ section {
 #menu {
   font-size: 2.5rem;
   cursor: pointer;
-  color: var(--black);
+  color: white;
   display: none;
 }
 
@@ -170,6 +170,10 @@ section {
 
 /* about */
 
+.about {
+  background: rgb(0, 0, 8);
+}
+
 .about .row {
   display: flex;
   flex-wrap: wrap;
@@ -189,20 +193,20 @@ section {
 
 .about .row .content p {
   font-size: 1.4rem;
-  color: var(--black);
+  color: white;
   padding: 1rem 0;
   line-height: 2;
 }
 
 .about ul li {
   font-size: 1.7rem;
-  color: black;
+  color: white;
   padding-top: 1.5rem;
 }
 
 .about ul li i {
   font-size: 2rem;
-  color: black;
+  color: white;
   padding-right: 1rem;
 }
 
@@ -213,7 +217,7 @@ section {
 }
 
 .about .row .content .btn {
-  margin: 3rem 0;
+  margin: 3rem 3rem;
 }
 
 .about .row .image {
@@ -230,7 +234,7 @@ section {
 /* artist */
 
 .artist {
-  background: black;
+  background: white;
 }
 
 .artist .box-container {
@@ -263,7 +267,7 @@ section {
 
 .artist .box-container .box .content h3 {
   font-size: 1.7rem;
-  color: white;
+  color: black;
 }
 
 /* end */
@@ -308,7 +312,7 @@ section {
 /* contact */
 
 .contact {
-  background: black;
+  background: rgb(0, 0, 8);
 }
 
 .contact .row {
@@ -338,7 +342,7 @@ section {
 }
 
 .contact .row form .inputBox input,
-.contact .row form textarea {
+.contact .row form #message {
   padding: 1rem;
   margin: 1rem 0;
   font-size: 1.7rem;
@@ -349,7 +353,7 @@ section {
   width: 49%;
 }
 
-.contact .row form textarea {
+.contact .row form #message {
   width: 100%;
   height: 15rem;
   resize: none;
@@ -409,11 +413,21 @@ section {
   section {
     padding: 3rem;
   }
+  .about .row .image {
+    display: none;
+  }
+
+  .contact .row .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
   #menu {
     display: inline-block;
+    color: white;
   }
 
   .header .navbar {
@@ -423,7 +437,7 @@ section {
     width: 30rem;
     box-shadow: var(--box-shadow);
     border-radius: 0.5rem;
-    background: #fff;
+    background: black;
   }
 
   .header .navbar.active {
